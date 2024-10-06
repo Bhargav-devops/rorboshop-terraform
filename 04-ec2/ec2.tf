@@ -282,7 +282,7 @@ module "records" {
       type    = "A"
       ttl     = 1
       records = [
-        "${module.web.private_ip}",
+        "${module.web.public_ip}",
       ]
     },
   ]
